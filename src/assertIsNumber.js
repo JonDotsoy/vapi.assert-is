@@ -1,4 +1,4 @@
-import {messageError} from './util/messageError'
+simport {messageError} from './util/messageError'
 import {isNumber} from 'vapi.is/isNumber'
 
 export const assertIsNumber = (value, name = 'value', message = 'not is a number.') => (
