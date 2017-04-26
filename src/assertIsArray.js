@@ -1,5 +1,7 @@
+import {messageError} from './util/messageError'
 import {isArray} from 'vapi.is/isArray'
 
-export const assertIsArray = (value, name = 'value') => (
-  isArray(value) || (() => { throw new TypeError(`\`${name}\`: not is an array.`) })()
+export const assertIsArray = (value, name = 'value', message = 'not is an array.') => (
+  isArray(value) ||
+  (() => { throw new TypeError(messageError(name, message)) })()
 )

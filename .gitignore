@@ -1,7 +1,7 @@
 
 ### Project ###
 *.js
-!src/*.js
+!src/**/*.js
 
 # Created by https://www.gitignore.io/api/node,windows,linux,macos
 
